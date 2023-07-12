@@ -92,7 +92,7 @@ export class DetailsComponent {
 
     this.applyForm.reset();
     setTimeout(() => {
-      this.isFormSubmitted = false;
-    }, 2000);
+      this.isFormSubmitted = false; // Hide the message after 5 seconds
+    }, 5000);
   }
 }
