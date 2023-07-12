@@ -1,0 +1,36 @@
+.content {
+  padding: 5px 20px;
+}
+
+.listing {
+  background: var(--accent-color);
+  padding-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.listing-heading {
+  color: var(--primary-color);
+}
+.listing-photo {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.listing-location {
+  display: flex;
+  align-items: center;
+}
+.listing-location::before {
+  content: url("/assets/location-pin.svg") / "";
+}
+
+section.listing a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+section.listing a::after {
+  content: "\203A";
+  margin-left: 5px;
+}

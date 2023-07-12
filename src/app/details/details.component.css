@@ -1,0 +1,145 @@
+.details-component {
+  padding: 8px 24px;
+}
+
+.details-article {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  padding: 10px 0px;
+}
+
+.details-back {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.listing-photo {
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: right;
+}
+
+.listing-heading {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.listing-location::before {
+  content: url("/assets/location-pin.svg") / "";
+}
+
+.listing-location {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.listing-features > .section-heading {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.listing-features {
+  margin-bottom: 20px;
+}
+
+.listing-features li {
+  font-size: 14pt;
+}
+
+li {
+  list-style-type: none;
+}
+
+.listing-apply .section-heading {
+  font-size: 18pt;
+  margin-bottom: 15px;
+}
+
+label,
+input {
+  display: block;
+}
+label {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+
+input {
+  font-size: 16pt;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 400px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 0.3px;
+}
+
+.listing-description {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 677px) and (max-width: 1120px) {
+  .details-article {
+    grid-template-columns: 100%;
+    gap: 0%;
+  }
+}
+
+@media (max-width: 676px) {
+  .details-component {
+    padding: 8px;
+  }
+
+  .details-article {
+    grid-template-columns: 100%;
+    gap: 0%;
+  }
+
+  .listing-photo {
+    max-height: 180px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 10px;
+    margin-bottom: 5px;
+    width: 180px;
+  }
+
+  .listing-heading {
+    font-size: 18px;
+  }
+
+  .listing-location {
+    font-size: 12px;
+  }
+
+  .listing-features .section-heading {
+    font-size: 16px;
+  }
+
+  .listing-features li {
+    font-size: 14px;
+  }
+
+  .listing-apply .section-heading {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .details-back {
+    font-size: 18px;
+  }
+
+}

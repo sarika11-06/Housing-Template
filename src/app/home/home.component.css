@@ -1,0 +1,77 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  box-shadow: 0px 5px 25px var(--shadow-color);
+}
+
+.results {
+  display: grid;
+  gap: 14px 0px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin: 10px 0px;
+  justify-content: space-around;
+}
+
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 2px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.form-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media (min-width: 677px) and (max-width: 1120px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+
+  .form-inputs {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 676px) {
+
+  .home {
+    display: block;
+    padding: 10px 2px;
+  }
+
+  .brand-name {
+    text-align: center;
+  }
+
+  .results {
+    grid-template-columns: 1fr;
+  }
+  input[type="text"] {
+    width: 84%;
+  }
+
+  .form-inputs {
+    display: block;
+  }
+}
