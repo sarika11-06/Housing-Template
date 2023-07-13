@@ -14,14 +14,39 @@ To get started with the Housing-Template, follow these steps:
    cd Housing-Template
    npm install
    ```
+3. To run the `db.json` file located in the `assets` folder using `json-server`, follow these steps:
 
-3. Run the application:
+4. In your project directory, navigate to the `assets` folder:
 
    ```
-   ng serve
+   cd src/assets
    ```
 
-4. Open your browser and visit `http://localhost:4200` to access the Housing-Template.
+5. Run `json-server` with the `db.json` file:
+
+   ```
+   json-server --watch db.json
+   ```
+
+   This will start the `json-server` and load the data from the `db.json` file.
+
+6. Open a new terminal window or tab, and navigate back to the root directory of your project:
+
+   ```
+   cd ../../
+   ```
+
+7. Run the Angular application:
+
+   ```
+   ng serve --open
+   ```
+
+   The application will now be able to fetch data from the `json-server` running on `http://localhost:4200`.
+
+   
+
+Make sure to the step to run `json-server` in your project's , along with any other necessary instructions for setting up and running the application.
 
 Feel free to explore the search functionality by city name and dive into the detailed information about selected houses. Have fun discovering your dream home!
 
